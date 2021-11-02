@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timNguyenAm(arr) {
+        let count = 0
+        let nguyenAm = ['a', 'i', 'u', 'e', 'o'];
+        for (let i = 0; i < nguyenAm.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
+                if (nguyenAm[i] == arr[j]) {
+                    count ++;
+                }
+            }
+        }
+        if (count !== 0) {
+            return count
+        } else {
+            return false
+        }
+    }
+
+
+    let array = prompt('Nhập chuỗi bạn cần kiểm tra!');
+    array.toString()
+    array = array.toLowerCase()
+    document.write(timNguyenAm(array));
+
+</script>
+</body>
+</html>

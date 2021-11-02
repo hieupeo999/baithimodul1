@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [2,5,6,7,8,9,41,80,23];
+    function searchIndex(n, arr) {
+        let check = false
+        let index;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === n) {
+                index = i;
+                check = true
+                break;
+            }
+        }
+        if (check) {
+            return index
+        } else {
+            return check
+        }
+    }
+    console.log(searchIndex(25, array));
+    let number = +prompt(" Nhập vào số cần tìm trong mảng")
+
+    function search(n, arr) {
+        let check = false;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === n) {
+                check = true;
+                break;
+            }
+        }
+        return check;
+    }
+
+    let result = search(number, array);
+    console.log(result)
+
+
+</script>
+</body>
+</html>

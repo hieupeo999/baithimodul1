@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result;
+    function giaiPhuongTrinh(a , b) {
+        if ( a == 0 && b == 0) {
+            result =  "phương trình có vô số nghiệm"
+        }
+        if (a == 0) {
+            result = 'trình vô nghiệm'
+        }
+        if (a > 0 || a < 0) {
+            result = -b/ a
+        }
+        return result
+    }
+    document.write(giaiPhuongTrinh(5,8))
+</script>
+</body>
+</html>
